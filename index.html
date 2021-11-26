@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+    <html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>.::Meepos e-sports::.</title>
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="/styles.css"> 
+        <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
+    </head>
+    <body id="top">
+        <header>
+            <img src="/images/meepo-logo.jpg" alt="meepo-logo" title="meepo-logo" width="60" height="75"/>            
+            <nav>
+                <ul>
+                    <li ><a href="#inicio">Inicio</a></li>
+                    <li><a href="#juegos">Juegos</a></li>
+                    <li><a href="#torneos">Torneos</a></li>
+                    <li><a href="#inscripcion">Inscripcion</a></li>
+                </ul>
+            </nav>
+            
+        </header>
+        <hr>
+        <main>
+            <section id="inicio" class="inicio">
+                <div class="background-image"></div>
+                <h1>Trae tus Meepos y participa</h1>
+                <h3>
+                    <a href="#inscripcion">Inscríbete ahora     </a>              
+                </h3>
+            </section> 
+
+            <section id="juegos" class="juegos">   
+
+                <h3>Juega con Nosotros</h3>
+                <ul class="grid">
+                    <li>
+                        <img class="juegosimg" src="/images/dota2.jpg" width="333" height="366" alt="dota2" title="dota2"/>
+                        <h4>DOTA2</h4>
+                    </li>
+                    <li>
+                        <img class="juegosimg" src="/images/csgo.jpg" width="333" height="366" alt="csgo" title="csgo"/>
+                        <h4>CSGO</h4>
+                    </li>
+                    <li>
+                        <img class="juegosimg" src="/images/dead2.jpg" width="333" height="366" alt="dead by daylight" title="dead by daylight"/>
+                        <h4>DEAD BY DAYLIGHT</h4>
+                    </li>
+                </ul>
+              
+            </section>
+            <hr>
+            
+            <section id="torneos" class="torneos">   
+
+                <h3 >Torneos</h3>
+                <ul class="grid">
+                    <li>
+                        <img class="juegosimg" src="/images/torneodota2.jpg" width="333" height="366" alt="Salud" title="Salud"/>
+                        <h4>DOTA2</h4>
+                    </li>
+                    <li>
+                        <img class="juegosimg" src="/images/torneocsgo.jpg" width="333" height="366" alt="SOAT" title="SOAT"/>
+                        <h4>CSGO</h4>
+                    </li>
+                    <li>
+                        <img class="juegosimg" src="/images/torneodead.jpg" width="333" height="366" alt="Vehicular" title="Vehicular"/>
+                        <h4>DEAD BY DAYLIGHT</h4>
+                    </li>
+                </ul>
+              
+            </section>
+            <hr>
+
+
+
+            <section id="inscripcion" class="inscripcion">
+                <img class="round" src="images/inscripcion.jpg" width="250" height="275" alt="inscripcion" title="inscripcion"/>
+                <h3>Inscribe a tus meepos</h3>
+                <div>
+                    <form onsubmit="return false">
+                        <div class="mb-2">                                
+                            <input 
+                                id="nombreEquipo"
+                                type="text" 
+                                name="nombreEquipo" 
+                                placeholder="Nombre del Equipo" 
+                                required
+                                maxlength="200" 
+                                class="form-control form-control-lg">
+                        </div> 
+                        <div class="mb-2">                                
+                            <input 
+                                id="nombrecapitan"
+                                type="text" 
+                                name="nombreCapitan" 
+                                placeholder="Nombres y Apellidos" 
+                                required
+                                maxlength="200" 
+                                class="form-control form-control-lg">
+                        </div> 
+                        <div class="mb-2">                                
+                            <input 
+                                id="steamId"
+                                type="text" 
+                                name="steamId" 
+                                placeholder="ID de Steam" 
+                                required
+                                maxlength="17" 
+                                minlength="17" 
+                                class="form-control form-control-lg">
+                        </div> 
+                        <div class="mb-2">                                
+                            <input 
+                                id="capitanEmail"
+                                type="email" 
+                                name="capitanEmail" 
+                                placeholder="Correo Electrónico" 
+                                required
+                                maxlength="200" 
+                                class="form-control form-control-lg">
+                        </div> 
+                        <div class="mb-2">                                
+                            <input 
+                                id="capitanCel"
+                                type="text" 
+                                name="capitanCel" 
+                                placeholder="Celular" 
+                                required
+                                maxlength="9" 
+                                minlength="9" 
+                                class="form-control form-control-lg">
+                        </div>
+                        <br> 
+                        <div class="mb-2">                            
+                            <div class="term">
+                                <input 
+                                    type="checkbox" 
+                                    id="chkTOC01" 
+                                    >                                                 
+                                <label>
+                                    Acepto cumplir 
+                                        <a style="text-decoration: underline;">Las reglas del torneo y decisiones de los organizadores.</a>
+                                </label>                                                                                        
+                            </div> 
+                            <div class="term">
+                                <input 
+                                    type="checkbox" 
+                                    id="chkTOC02" 
+                                    >                                                     
+                                <label>
+                                    Acepto la <a style="text-decoration: underline;">Política de Protección de Datos Personales.</a>
+                                </label>                                            
+                            </div>                                                                    
+                        </div>  
+                        <div>                                
+                            <button onclick="formEvalute()"                                
+                                class="btn btn-lg btn-block px-0 text-muted">
+                                Enviar
+                            </button>
+                        </div>
+                    </form>
+                </div>
+                <div id="divMsg">                    
+                </div>
+            </section>
+        </main>
+        <footer>            
+            <ul>
+                <li><a href="#"><i class="fa fa-twitter-square"></i></a></li>
+                <li><a href="#"><i class="fa fa-facebook-square"></i></a></li>
+                <li><a href="#"><i class="fa fa-youtube-square"></i></a></li>
+                <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                <li><a href="#"><i class="fa fa-steam-square"></i></a></li>
+            </ul>
+            <div class="copy-right">
+                <div class="logo">
+                    <img src="/images/meepo-logo.jpg" width="40" height="50" alt="meepo-logo" title="meepo-logo"/>
+                </div>  
+                <p class="copy-right-text">    
+                    © Los Meepos
+                </p>
+                </div>                        
+        </footer>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    
+        <script>
+            function formEvalute(){
+                let nombreEquipo = document.getElementById("nombreEquipo");
+                let nombrecapitan = document.getElementById("nombrecapitan");
+                let steamId = document.getElementById("steamId");
+                let capitanEmail = document.getElementById("capitanEmail");
+                let capitanCel = document.getElementById("capitanCel");
+                let chkTOC01 = document.getElementById("chkTOC01");
+                let chkTOC02 = document.getElementById("chkTOC02");
+                let divMsg =  document.getElementById("divMsg");
+
+                let msg = "";
+                let formOk = 0;
+
+                if(nombreEquipo.value.length <= 0){
+                    msg = "Debe ingresar su equipo"; 
+                }else{
+                    formOk++;
+                }
+
+                if(nombrecapitan.value.length <= 0){
+                    msg = "Debe ingresar su nombre"; 
+                }else{
+                    formOk++;
+                }
+
+                if(steamId.value.length <= 0){
+                    msg = "Debe ingresar su SteamID";                    
+                }else{
+                    formOk++;
+                }
+
+                if(capitanEmail.value.length <= 0){
+                    msg = "Debe ingresar su correo";                    
+                }else{
+                    formOk++;
+                }
+
+                if(capitanCel.value.length <= 0){
+                    msg = "Debe ingresar su número celular";                    
+                }else{
+                    formOk++;
+                }
+
+           
+
+                if(formOk===5){
+                    msg = `
+                    <table class="tabla">
+                        <thead>
+                            <tr>
+                                <th>Campo</th>
+                                <th>Valor</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Nombre equipo :</td>
+                                <td>${nombreEquipo.value}</td>
+                            </tr>
+                            <tr>
+                                <td>Nombre Capitan:</td>
+                                <td>${nombrecapitan.value}</td>
+                            </tr>
+                            <tr>
+                                <td>SteamId :</td>
+                                <td>${steamId.value}</td>
+                            </tr>
+                            <tr>
+                                <td>Email Capitan :</td>
+                                <td>${capitanEmail.value}</td>
+                            </tr>
+                            <tr>
+                                <td>Celular Capitan :</td>
+                                <td>${capitanCel.value}</td>
+                            </tr>
+                            <tr>
+                                <td>TOC-1 :</td>
+                                <td>${chkTOC01.checked}</td>
+                            </tr>
+                            <tr>
+                                <td>TOC-2 :</td>
+                                <td>${chkTOC02.checked}</td>
+                            </tr>
+                        </tbody>
+                    </table>`;
+                }
+                //alert(msg);
+                divMsg.innerHTML = msg;
+            }
+        </script>
+    </body>
+</html>
